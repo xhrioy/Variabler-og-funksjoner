@@ -1,0 +1,106 @@
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = 10
+>>> y = 12
+>>> z = x + y
+>>> print(z)
+22
+>>> if z >= 10:
+... print(f"z = {z}")#
+  File "<stdin>", line 2
+    print(f"z = {z}")#
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>>
+>>> if z > 10:
+... print(f"z = {z}")#
+  File "<stdin>", line 2
+    print(f"z = {z}")#
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>> if z > = 10:
+  File "<stdin>", line 1
+    if z > = 10:
+           ^
+SyntaxError: invalid syntax
+>>> if z >= 10:
+... print(f”z = {z}”) # bruker en f-string til å skrive ut verdier av variabler.
+  File "<stdin>", line 2
+    print(f”z = {z}”) # bruker en f-string til å skrive ut verdier av variabler.
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>> if z >= 10:
+... print('z is greater than 10')
+  File "<stdin>", line 2
+    print('z is greater than 10')
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>> if x >= 10:
+... print(f”z = {z}”) #
+  File "<stdin>", line 2
+    print(f”z = {z}”) #
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>> if z >= 10:
+...     print(f”z = {z}”) # bruker en f-string til å skrive ut verdier av variabler.
+  File "<stdin>", line 2
+    print(f”z = {z}”) # bruker en f-string til å skrive ut verdier av variabler.
+           ^
+SyntaxError: invalid character '”' (U+201D)
+>>> elif z <= 10:
+  File "<stdin>", line 1
+    elif z <= 10:
+    ^^^^
+SyntaxError: invalid syntax
+>>>     …
+  File "<stdin>", line 1
+    …
+IndentationError: unexpected indent
+>>> else:
+  File "<stdin>", line 1
+    else:
+    ^^^^
+SyntaxError: invalid syntax
+>>>     …
+  File "<stdin>", line 1
+    …
+IndentationError: unexpected indent
+>>> if z >= 10:
+... elif z <= 10:
+  File "<stdin>", line 2
+    elif z <= 10:
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>> if z >= 10:
+... print(f”z = {z}”)
+  File "<stdin>", line 2
+    print(f”z = {z}”)
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>> a + b
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>> a = 10
+>>> b = 5
+>>> a + b
+15
+>>> a * b
+50
+>>> a: int
+>>> b:int
+>>> return a - b
+  File "<stdin>", line 1
+SyntaxError: 'return' outside function
+>>> a: int
+>>> b: int
+>>> return a - b
+  File "<stdin>", line 1
+SyntaxError: 'return' outside function
+>>> a - b
+5
+>>> print(subtract(10,5))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'subtract' is not defined
+>>>
